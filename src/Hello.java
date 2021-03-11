@@ -1,6 +1,13 @@
 public class Hello {
     public static void main(String[] args) {
-        int a = 10;
-        int b = 20;
+
+        // 한 줄 주석 : ctrl+/
+        System.out.println("hello");
+
+        /*
+        여러줄 주석 : ctrl+shift+/
+         */
+
+
     }
 }
