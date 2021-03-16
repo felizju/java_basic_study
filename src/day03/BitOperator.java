@@ -23,7 +23,7 @@ public class BitOperator {
 
         // 비트 반전 (단항)
         int y = 8; // 0000 1000
-        System.out.println(~y); // 1111 0111 (반전 후 1더하고 음수기호) -> 9
+        System.out.println(~y); // 1111 0111 (반전 후 1더하고 음수기호) -> -9
 
 
     }

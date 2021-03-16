@@ -9,9 +9,10 @@ public class DoWhileExample {
         int n = 0;
 
         Scanner sc = new Scanner(System.in);
-        // while의 시작 조건이 처음부터 false이므로 0회 반복됨.
-      /*
+
+        /*
         while(n != 0){
+            // while의 시작 조건이 처음부터 false이므로 0회 반복됨.
             System.out.println("정수(0입력 시 종료):");
             n = sc.nextInt();
             total += n;

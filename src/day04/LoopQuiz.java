@@ -120,10 +120,8 @@ public class LoopQuiz {
 
         //프로그램 종료 이후
         System.out.println("==========================");
-        System.out.printf("# 정답 횟수: %d회, 오답 횟수: %d회\n"
-                , correctCount, wrongCount);
+        System.out.printf("# 정답 횟수: %d회, 오답 횟수: %d회\n", correctCount, wrongCount);
 
         sc.close();
-
     }
 }
