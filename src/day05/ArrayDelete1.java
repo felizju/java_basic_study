@@ -17,7 +17,5 @@ public class ArrayDelete1 {
         temp = null;
         System.out.println(Arrays.toString(arr));
 
-
-
     }
 }
