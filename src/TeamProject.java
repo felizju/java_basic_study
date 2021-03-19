@@ -10,9 +10,9 @@ public class TeamProject {
             System.out.println("1.전체 글 보기");
             System.out.println("2.게시글 삭제");
             System.out.println("3.게시글 수정");
-            System.out.println("5.계시글 작성");
-            System.out.println("6.계시글 검색");
-            System.out.println("7.프로그램 종료");
+            System.out.println("4.게시글 작성");
+            System.out.println("5.게시글 검색");
+            System.out.println("6.프로그램 종료");
             System.out.println("======================");
             System.out.print(">> ");
 
