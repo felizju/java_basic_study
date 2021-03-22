@@ -29,9 +29,6 @@ public class Roulette {
             players[i] = sc.next();
         }
 
-        // 주석주석
-        // 주석주석
-
         System.out.println(Arrays.toString(players) + " 참가!");
         System.out.print("\n실탄 개수 (6 미만) ==> ");
 
