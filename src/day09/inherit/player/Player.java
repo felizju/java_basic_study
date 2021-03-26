@@ -5,7 +5,7 @@ package day09.inherit.player;
 public class Player extends Object{
 
     // 공통 필드
-    String nickName;
+    private String nickName;
     int level;
     int hp;
 
@@ -24,12 +24,15 @@ public class Player extends Object{
         System.out.printf("%s님이 공격합니다.\n", this.nickName);
     }
 
-    void info(){
+    public void info(){
         System.out.println("===========================");
         System.out.println("# 캐릭터명 : "+nickName);
         System.out.println("# 레벨 : "+level);
         System.out.println("# 체력 : "+hp);
     }
-    
-    
+
+    // getter
+    public String getNickName() {
+        return nickName;
+    }
 }

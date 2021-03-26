@@ -10,7 +10,7 @@ public class Mage extends Player {
     }
 
     @Override
-    void info() {
+    public void info() {
         super.info();
         System.out.println("# 마력 : "+mana);
     }

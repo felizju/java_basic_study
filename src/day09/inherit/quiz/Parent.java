@@ -7,6 +7,7 @@ public class Parent {
         System.out.println("Parent() call");
     }
     public Parent(String nation){
+        super(); // 생략
         this.nation = nation;
         System.out.println("Parent(String) call");
     }

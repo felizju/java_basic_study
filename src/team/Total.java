@@ -1,3 +1,5 @@
+package team;
+
 import java.util.*;
 
 public class Total {
