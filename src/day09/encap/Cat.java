@@ -20,8 +20,8 @@ public class Cat {
 
     // 값을 변경하거나 초기화 하고 싶으면 setter 를 이용.
     public void setWeight(double weight) {
-        if(weight<=0 || weight>=20){
-            this.weight = 3.5;
+        if(weight <= 0 || weight >= 20){
+            this.weight = 3.5; // 초기화 값 지정
             return;
         }
         this.weight = weight;

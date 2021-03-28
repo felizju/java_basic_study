@@ -1,4 +1,4 @@
-package day07;
+package day07.phone;
 
 // 설계도 클래스는 main을 만들지 않음.
 public class Phone {
@@ -76,7 +76,6 @@ public class Phone {
             return;
         }
         if (targetPhone.messageCount < targetPhone.receiveMessages.length) {
-            
             // targetPhone의 메시지함[cnt]에 저장
             targetPhone.receiveMessages[targetPhone.messageCount++] = message;
             System.out.println("메시지를 성공적으로 보냈습니다.");

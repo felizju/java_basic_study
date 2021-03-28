@@ -1,6 +1,6 @@
 package day03;
 
-// 1. 스캐너 api 불러오기
+// 1. 스캐너 API 불러오기
 import  java.util.Scanner;
 
 public class StdInput {
@@ -20,7 +20,7 @@ public class StdInput {
         int age = sc.nextInt();
 
         System.out.println("=========================");
-        System.out.printf("입력된 이름은 %s이고, 나이는 %d세입니다.\n" ,name ,age);
+        System.out.printf("입력된 이름은 %s이고, 나이는 %d세 입니다.\n" ,name ,age);
 
         // 4. 스캐너 메모리 해제
         sc.close();

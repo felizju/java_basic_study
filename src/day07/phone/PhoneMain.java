@@ -1,4 +1,4 @@
-package day07;
+package day07.phone;
 
 // 실행용 클래스는 main 메서드를 포함.
 public class PhoneMain {

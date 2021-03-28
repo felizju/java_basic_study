@@ -4,7 +4,7 @@ public class Calculator {
     
     String madeBy; // 제조사
     String color; // 색상
-    static double pi = 3.14; // 원주율
+    static double pi; // 원주율
 
     Calculator(){
         pi = 3.14;
@@ -17,7 +17,7 @@ public class Calculator {
         pi = 3.14;
     }
 
-    // 메서드 내부에 인스턴스 필드(this)가 필요하면 non-static
+    // 메서드 내부에서 this 필드(인스턴스 필드)가 필요하면 non-static
     // 인스턴스 필드가 필요없으면 static
     void paint(String color){
         this.color = color;

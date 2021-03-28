@@ -4,11 +4,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-
         Count c1 = new Count();
         c1.x = 5;
-//        c1.y = 10;
-        Count.y = 10; // static, this의미가 없음. 어차피 1개이기 때문
+        Count.y = 10; // static, this 의미가 없음. 어차피 1개이기 때문
 
         Count c2 = new Count();
         c2.x += 10;

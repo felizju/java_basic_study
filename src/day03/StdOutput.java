@@ -20,7 +20,7 @@ public class StdOutput {
         String anni = "식목일";
 
         System.out.println(month + "월 " + day + "일은 " + anni + "입니다.");
-        System.out.printf("%d월 %d일은 %s입니다.\n",month,day,anni);
+        System.out.printf("%d월 %d일은 %s 입니다.\n",month,day,anni);
         // printf 는 개행 안함.
         System.out.println("야호");
 

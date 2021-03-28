@@ -40,7 +40,7 @@ public class ArrayBasic {
         // 값 목록으로 배열 생성하기
         // new type[]을 생략할 수 있는 상황은 변수를 선언할 때 뿐임, 선언할 때는 생략할 수 있게 해줌.
         String[] foods = {"탕수육", "김치볶음밥", "짬뽕"};
-        foods = new String[] {"오렌지","자몽","레몬"};
+        foods = new String[] {"오렌지", "자몽", "레몬"};
         System.out.println(foods.length );
 
         // 배열 내부값 한번에 출력하기

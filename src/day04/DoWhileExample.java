@@ -10,17 +10,17 @@ public class DoWhileExample {
 
         Scanner sc = new Scanner(System.in);
 
+        // while 의 시작 조건이 처음부터 false 이므로 0회 반복됨.
         /*
         while(n != 0){
-            // while의 시작 조건이 처음부터 false이므로 0회 반복됨.
             System.out.println("정수(0입력 시 종료):");
             n = sc.nextInt();
             total += n;
         }
        */
        do {
-           // while : 선 조건판단 후 반복 - false이면 반복 0회
-           // do-while : 선 반복 후 조건판단 - false라도 최소 반복 1회
+           // while : 선 조건판단 후 반복 - false 이면 반복 0회
+           // do-while : 선 반복 후 조건판단 - false 라도 최소 반복 1회
             System.out.println("정수(0입력 시 종료) : ");
             n = sc.nextInt();
             total += n;
