@@ -5,12 +5,14 @@ import day09.inherit.player.Player;
 // 플레이어 그룹
 public class Party {
 
-    // 클래스 배열
-    Player[] players;
-    int participation; // 현재 참여 인원 수 저장할 변수
-    int NOT_FOUND;
+    private static final int NOT_FOUND = -1;
 
-    
+    // 클래스 배열
+    Player[] players; // 플레이어 클래스를 여러개 가지고 있는 클래스 배열
+    int participation; // 현재 참여 인원 수 저장할 변수
+
+
+    // 생성자
     Party(int partyNum){
         players = new Player[partyNum];
         System.out.println(partyNum+"인 파티가 생성되었습니다.");
