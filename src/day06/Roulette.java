@@ -1,17 +1,33 @@
 package day06;
 
 import java.util.Arrays;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Roulette {
-    public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+    private static Scanner sc = new Scanner(System.in);
+
+    // InputMismatchException Try-catch
+    public static int safeNextInt(){
+        while (true) {
+            int num = 0;
+            try{
+                return sc.nextInt();
+            }catch (InputMismatchException e){
+                sc.nextLine(); // 버퍼스트림 제거
+                System.out.println("정수로만 입력하세요!");
+            }
+        }
+    }
+
+
+    public static void main(String[] args) {
 
         System.out.print("게임 인원 (2 ~ 4명) ==> ");
 
         // 총 참여인원 수 입력 받기
-        int playerNum = sc.nextInt();
+        int playerNum = safeNextInt(); // warning
 
         // 인원 수의 범위가 적당한지 판단
         if (playerNum < 2 || playerNum > 4) {
@@ -32,7 +48,7 @@ public class Roulette {
         System.out.println(Arrays.toString(players) + " 참가!");
 
         System.out.print("\n실탄 개수를 입력 (6 미만) ==> ");
-        int bulletNum = sc.nextInt();
+        int bulletNum = safeNextInt(); // warning
         sc.nextLine(); // 위에서 발생한 nextInt의 \n을 처리하는 구문
 
         //탄창 배열을 만든다 (공간 6개)
@@ -110,7 +126,7 @@ public class Roulette {
             } else {
                 //생존
                 //턴을 넘겨야 한다.
-                System.out.println("휴..... 살았습니다~~");
+                System.out.println("휴... 살았습니다~~");
                 //turn인덱스를 조정
                 if (turn == players.length - 1) {
                     //마지막번 플레이어는 다음 턴을 0으로 조절
