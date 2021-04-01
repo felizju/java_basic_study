@@ -19,5 +19,6 @@ public class SystemTime {
 
         System.out.println("실행시간 : " + (end - start) + "ms");
 
+        System.exit(0); // 시스템 강제종료
     }
 }
