@@ -1,4 +1,4 @@
-package day14.api.time;
+package day14.time;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
