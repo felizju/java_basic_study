@@ -26,13 +26,16 @@ public class DateManipulation {
         // 현재 시간
         LocalDateTime now = LocalDateTime.now();
 
+        // a.isBefore(b) : a가 b 이전이면 True.
+        // a.isAfter(b) : a가 b 이후이면 True.
         if(now.isBefore(endDate)){
             System.out.println("현재 진행 중인 행사입니다.");
         }else{
             System.out.println("종료된 행사입니다.");
         }
 
-        // 날짜 연산 - 날짜 사이 갭 (뺄셈)
+        // 날짜 연산
+        // 날짜 사이 갭 (뺄셈) : ChronoUnit.DAYS.between(시작일,종료일)
         long between = ChronoUnit.DAYS.between(startDate, endDate);
         System.out.println("행사 진행 일 수  = " + between);
 

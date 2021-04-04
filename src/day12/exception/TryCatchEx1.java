@@ -10,7 +10,7 @@ public class TryCatchEx1 {
         try {
             // 예외 발생 가능성이 있는 코드를 예외처리
             // n2가 0일 가능성이 있음
-            System.out.printf("%d / %d = %d\n", n1, n2, n1/n2);
+            System.out.printf("%d / %d = %d\n", n1, n2, n1/n2); // warning
 
         }catch (Exception e){
             // 예외 발생 시 실행할 코드를 기재

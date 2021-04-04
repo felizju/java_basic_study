@@ -18,7 +18,8 @@ public class Mage extends Player {
     public void meteo(Player...targets){
 
         // targets에는 메테오에 맞은 플레이어들이 있으니까, 한명씩 꺼내서 10~15의 정수를 hp에서 차감시켜야함.
-        // 결과 로그를 출력해야함. // 자기 자신은 제외해야함.
+        // 결과 로그를 출력해야함.
+        // 자기 자신은 제외해야함.
 
         if(targets.length > 0){
             System.out.printf("# %s님이 메테오 시전!!\n", this.getNickName());

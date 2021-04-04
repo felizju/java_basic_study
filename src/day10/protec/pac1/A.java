@@ -8,8 +8,10 @@ public class A {
     void m1(){}
     protected void m2(){}
 
-    A(int a){} // default
+    // 생성자1 - default
+    A(int a){}
 
-    protected A(String b){} // protected
+    // 생성자2 - protected
+    protected A(String b){}
 
 }

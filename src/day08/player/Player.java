@@ -2,10 +2,12 @@ package day08.player;
 
 public class Player {
 
+    // 필드
     String name;
     int level;
     int hp;
 
+    // 생성자
     Player(){
         // this(), super() : 반드시 생성자 맨 첫 라인에 기술.
         this("이름없음", 1); // 3번 생성자 호출
@@ -37,6 +39,7 @@ public class Player {
     }
 
 
+    // 메서드
     void attack(Player target){
 //    void attack(Player this, Player target){  - Player this 생략되어 있음.
 

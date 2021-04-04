@@ -21,7 +21,8 @@ public class Warrior extends Player {
 
     public void fireSlash(Player target){
 
-        System.out.printf("%s님이 %s님에게 FireSlash를 시전했습니다!\n", this.getNickName(), target.getNickName());
+        System.out.printf("%s님이 %s님에게 FireSlash를 시전했습니다!\n"
+                ,this.getNickName(), target.getNickName());
 
         String jobName;
         int damage;
@@ -43,8 +44,10 @@ public class Warrior extends Player {
             jobName = "미확인";
         }
         target.hp -= damage;
-        System.out.printf("%s(%s)님이 %d의 피해를 입었습니다.\n", target.getNickName(), jobName, damage);
-        System.out.printf("%s님의 현재 체력 : %d\n" , target.getNickName(), target.hp);
+        System.out.printf("%s(%s)님이 %d의 피해를 입었습니다.\n"
+                ,target.getNickName(), jobName, damage);
+        System.out.printf("%s님의 현재 체력 : %d\n"
+                ,target.getNickName(), target.hp);
         System.out.println();
 
 

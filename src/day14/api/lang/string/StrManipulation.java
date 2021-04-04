@@ -8,7 +8,7 @@ public class StrManipulation {
         String str = "hello java";
 
         // charAt(idx) : 문자열 인덱스에 따른 글자를 반환
-        char c = str.charAt(0);
+        char c = str.charAt(3);
         System.out.println("c = " + c);
         
         // substring() : 문자열의 특정 범위를 추출

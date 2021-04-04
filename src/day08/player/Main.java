@@ -3,7 +3,7 @@ package day08.player;
 public class Main {
     public static void main(String[] args) {
 
-        Player a = new Player(); // 1번 생성자
+        Player lee = new Player(); // 1번 생성자
         System.out.println("====================================");
 
         Player kim = new Player("김철수"); // 2번 생성자
@@ -12,7 +12,7 @@ public class Main {
         Player park = new Player("박영희", 20); // 3번 생성자
         System.out.println("====================================");
 
-        a.info();
+        lee.info();
         kim.info();
         park.info();
 

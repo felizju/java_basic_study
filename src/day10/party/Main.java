@@ -14,12 +14,12 @@ public class Main {
         
         // 파티원 추가
         party.addPlayer(new Warrior("전사맨뽀로로"));
-        party.addPlayer(new Mage("전사맨루피"));
-        party.addPlayer(new Hunter("전사맨에디"));
+        party.addPlayer(new Mage("마법사루피"));
+        party.addPlayer(new Hunter("헌터에디"));
 
         // 파티원 추방
         System.out.println("==============================");
-        party.kickPlayer("전사맨에디");
+        party.kickPlayer("전사맨뽀로로");
 
         // 파티원 정보보기
         party.showPartiInfo();

@@ -63,7 +63,7 @@ public class ListExample {
         System.out.println("===============================");
 
 
-        // list 내부 객체 전체 삭제 : claer()
+        // list 내부 객체 전체 삭제 : clear()
 
         list.clear();
         System.out.println(list);
@@ -75,16 +75,17 @@ public class ListExample {
         List<List<String>> list2dV2;
 
         // 초기값을 가진 리스트 생성
+        System.out.println("===============================");
         List<Integer> numbers = new ArrayList<>(
                 Arrays.asList(50,60,85,30,10,40)
         );
         System.out.println(numbers);
 
-        // 오름차 정렬
+        // 오름차 정렬 : sort()
         numbers.sort(Integer::compareTo);
         System.out.println(numbers);
 
-        // 내림차 정렬
+        // 내림차 정렬 : sort(Comparator.reverseOrder())
         numbers.sort(Comparator.reverseOrder());
         System.out.println(numbers);
 

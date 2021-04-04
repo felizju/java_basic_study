@@ -35,6 +35,7 @@ public class Basic {
         b.typeCheck(10);
         b.typeCheck("aaa","bbb");
 
+        // 대표적인 오버로딩 : println()
         System.out.println();
 
     }

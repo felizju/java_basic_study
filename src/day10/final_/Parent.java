@@ -11,7 +11,7 @@ class Child extends Parent {
 //    }
 }
 
-// final
+// final 붙은 메서드는 오버라이드 할 수 없다.
 public class Parent {
 
     final void m1(){}

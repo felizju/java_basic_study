@@ -21,7 +21,8 @@ public class Main {
         System.out.println("===================");
         // 다운캐스팅은 한 번 업캐스팅 된 객체만 사용 가능함.
 
-//        Child c = (Child) new Parent(); // 부모는 자식꺼 절대 가지고 갈 수 없음. runtime error
+//        Child c = (Child) new Parent();
+//        자식은 부모꺼 절대 가지고 갈 수 없음. runtime error
 
         Parent p = new Parent();
         if(p instanceof Child){

@@ -11,10 +11,10 @@ public class Cat {
 
     // 값을 가져가서 참조하고 싶을 때는 getter 를 이용.
     public double getWeight(boolean pound) {
-        if(pound){
+        if(pound){ // true
             return this.weight * 0.45; // pound
-        } else{
-            return  this.weight; // kg
+        } else{ // false
+            return this.weight; // kg
         }
     }
 

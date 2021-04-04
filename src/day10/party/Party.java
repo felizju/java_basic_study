@@ -5,11 +5,12 @@ import day09.inherit.player.Player;
 // 플레이어 그룹
 public class Party {
 
+    // 상수 : 변하지 않는 값
     private static final int NOT_FOUND = -1;
 
     // 클래스 배열
     Player[] players; // 플레이어 클래스를 여러개 가지고 있는 클래스 배열
-    int participation; // 현재 참여 인원 수 저장할 변수
+    int participation; // 현재 참여 인원 수
 
 
     // 생성자
@@ -18,8 +19,9 @@ public class Party {
         System.out.println(partyNum+"인 파티가 생성되었습니다.");
     }
 
+
     // 파티원 추가 기능
-    public void addPlayer(Player player){
+    public void addPlayer(Player player){ // parameter : Player 객체가 들어옴.
 
         // 파티 인원 수 초과 검증
         if(participation >= players.length){
@@ -38,8 +40,8 @@ public class Party {
         // 2. 삭제로직 (방 줄일 필요 없음 : 추가 인원 들어올 수 있으므로)
         int index = findIndexByPlayerNickName(kickTarget);
 
-        if(index != NOT_FOUND){
-            // 삭제로직
+        if(index != NOT_FOUND){ // 검색한 인덱스가 -1이 아니라면
+            // 삭제 로직 시작
             for (int i = index; i < participation-1; i++) {
                 players[i] = players[i+1];
             }
@@ -56,10 +58,10 @@ public class Party {
     private int findIndexByPlayerNickName(String kickTarget){
         for (int i = 0; i < participation; i++) {
             if (kickTarget.equals(players[i].getNickName())){
-                return i;
+                return i; // 인덱스를 return
             }
         }
-        return NOT_FOUND; // 못찾았을 때 -1 리턴
+        return NOT_FOUND; // 인덱스 검색에 실패했을 때 (못 찾았을 때) -1 리턴
     }
 
 

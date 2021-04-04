@@ -11,12 +11,12 @@ public class TryCatchEx2 {
 
         try {
             System.out.print("정수 1 : ");
-            int n1 = sc.nextInt(); // warning
+            int n1 = sc.nextInt(); // warning : InputMismatchException
 
             System.out.print("정수 2 : ");
-            int n2 = sc.nextInt(); // warning
+            int n2 = sc.nextInt(); // warning : InputMismatchException
 
-            int divResult = n1 / n2; // warning
+            int divResult = n1 / n2; // warning : ArithmeticException
             System.out.println("divResult = " + divResult);
 
             sc.close();
