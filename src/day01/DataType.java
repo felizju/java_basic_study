@@ -44,10 +44,5 @@ public class DataType {
         System.out.println(100+"200");  // 자동 형변환 : 문자열
 //        System.out.println("200"-100); // 숫자와 문자열의 덧셈만 문자열 반환처리
 
-
-
-        
-
-
     }
 }
