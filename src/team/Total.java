@@ -28,7 +28,7 @@ public class Total {
         start:
         while (true) {
             System.out.println("========================");
-            System.out.println("++++ 게시판 로그인! ++++");
+            System.out.println("++++ 게시판 로그인 ++++");
             System.out.println("========================");
             System.out.print(" >> 아이디: ");
             String id = sc.next();  //id 받기
@@ -57,7 +57,7 @@ public class Total {
                 boolean after = true; // 로그아웃을 담당하기위한 논리값
                 while (after) {
                     System.out.println("========================");
-                    System.out.println("+++++ 계시판 관리 +++++");
+                    System.out.println("+++++ 게시판 관리 +++++");
                     System.out.println("========================");
                     System.out.println("1.사용자 관리");
                     System.out.println("2.공지사항 작성");
@@ -258,7 +258,7 @@ public class Total {
                                             }
                                         }
                                         break;
-                                    case 8: // 이전으로 돌아가기 가능 계시판 관리 바로 윗줄의 while 문으로 돌아가짐
+                                    case 8: // 이전으로 돌아가기 가능 게시판 관리 바로 윗줄의 while 문으로 돌아가짐
                                         System.out.println("");
                                         //re = false; // 사용자 관리에서 머물게 해주는 반복문을 false 로 바꿈으로서 상위의 반복문이 다시 실행되게 만듬.
                                         break previous; //라벨을 활용해서 정지
@@ -403,7 +403,6 @@ public class Total {
                                         break previous2;
                                     //이전
                                 }
-                                //계시판에 따로 공지사항 가장 위에 올라오게 작성하면 될것 같음
                             }
                         case 3:
                             System.out.println("- 로그아웃 하겠습니다!");
@@ -424,14 +423,14 @@ public class Total {
                 //사용자 계정 넣기
                 while (true) {
                     System.out.println("========================");
-                    System.out.println("++++++++ 계시판 ++++++++");
+                    System.out.println("++++++++ 게시판 ++++++++");
                     System.out.println("========================");
                     System.out.println("1.게시판 글 작성");
-                    System.out.println("2.게시판 글 전체 보기");
+                    System.out.println("2.게시판 글 보기");
                     System.out.println("3.게시판 글 수정");
                     System.out.println("4.게시판 글 삭제");
                     System.out.println("5.게시판 글 검색");
-                    System.out.println("6.게시판 프로그램 종료");
+                    System.out.println("6.프로그램 종료");
                     System.out.println("========================");
                     System.out.print(">> ");
                     //입력 받는 기능
@@ -464,9 +463,9 @@ public class Total {
                             }
                         }
                         System.out.println("");
-                        // 작성 된 계시글 확인
+                        // 작성 된 게시글 확인
                         System.out.println("========================");
-                        System.out.println("++++ 작성된 계시글 ++++");
+                        System.out.println("++++ 작성된 게시글 ++++");
                         System.out.println("========================");
                         System.out.printf("번호 : %s \n작성자 : %s \n제목 : %s \n내용 : %s\n", article[0], article[1], article[2], article[3]);
                         System.out.println("");
@@ -477,7 +476,7 @@ public class Total {
                         // 2. 게시판 글 전체 보기
                         System.out.println("");
                         System.out.println("========================");
-                        System.out.println("전체 게시판 글 보기입니다.");
+                        System.out.println("게시판 글 보기입니다.");
                         System.out.println("========================");
 //                    System.out.println(boardCount);
                         if (articleCount == 0) {
@@ -611,7 +610,7 @@ public class Total {
                                 break;
                             }
                         }
-                        //검색 된 계시글 화면 표현
+                        //검색 된 게시글 화면 표현
                         if (searchNum) {
                             System.out.println("========================");
                             System.out.println("++++ 검색 된 게시글 ++++");

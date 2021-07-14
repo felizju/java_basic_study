@@ -7,7 +7,7 @@ public class ArrayInsert2 {
         
         // 원본 배열
         int[] arr = {1, 3, 5, 7, 9, 11, 13}; // 배열 길이 : 7
-                    //1,3,5,( 6 )7,9,11,13
+                    //1,3,5, ( 6 ) 7,9,11,13
 
         int newData = 6;
 
@@ -28,9 +28,20 @@ public class ArrayInsert2 {
         for (int i = 0; i < arr.length; i++) {
             temp[i] = arr[i];
         }
+        
+        // 1,3,5,7,9,11,13,?
+        // j=7; j>3; j--
+        // temp[7] = temp[6]  --> ? = 13
+        // temp[6] = temp[5]  --> 13 = 11
+        // temp[5] = temp[4]  --> 11 = 9
+        // temp[4] = temp[3]  --> 9 = 7
+
         for (int j = temp.length-1; j > insertIdx; j--) {
             temp[j] = temp[j-1];
         }
+        System.out.println("옮긴 후 : "+Arrays.toString(temp)); // 1,3,5,7,7,9,11,13
+
+        // temp[3] = 6  --> 7 = 6
         temp[insertIdx] = newData;
 
         arr = temp; temp = null;

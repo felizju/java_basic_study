@@ -58,7 +58,7 @@ public class LoopQuiz {
         int correctCount = 0;
         int wrongCount = 0;
 
-        while (true) {
+        while (true) { // 반복
 
             int first = (int) (Math.random() * max) + 1;
             int second = (int) (Math.random() * max) + 1;
@@ -106,7 +106,7 @@ public class LoopQuiz {
 
             qNumber++; //다음 질문번호 셋팅
 
-            if (userAnswer == 0) break;
+            if (userAnswer == 0) break; // 0 입력 시 종료
 
             //정답 검증
             if (userAnswer == realAnswer) {

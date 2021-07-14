@@ -8,10 +8,10 @@ public class ConditionalOperator {
         Scanner scan = new Scanner(System.in);
         System.out.println("돈을 입력하세요!");
         int money = scan.nextInt();
-        scan.close();
+        scan.close(); // 스캐너 사용 종료
         System.out.println("가진 돈 : " + money);
 
-        String food = money > 5000 ? "육개장" : "라면";
+        String food = money > 5000 ? "육개장" : "라면"; // 3항 연산자
         System.out.println("선택된 음식 : " + food);
 
     }

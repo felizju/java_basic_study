@@ -20,7 +20,7 @@ public class board {
             System.out.println("# 3. 게시판 글 수정");
             System.out.println("# 4. 게시판 글 삭제");
             System.out.println("# 5. 게시판 글 검색");
-            System.out.println("# 6. 게시판 프로그램 종료");
+            System.out.println("# 6. 프로그램 종료");
             System.out.println("====================================");
 
             System.out.print("메뉴 입력 >> ");
@@ -71,7 +71,6 @@ public class board {
                                     ,boardArr[i][0],boardArr[i][1],boardArr[i][2],boardArr[i][3]);
                         }
                     }
-
                     break;
                 case 3:
                     // 3. 게시판 글 수정
@@ -86,12 +85,9 @@ public class board {
                             if(modifyIdx.equals(boardArr[i][0])){
                                 System.out.printf("글 번호 : %s | 작성자 : %s | 제목 : %s | 내용 : %s \n"
                                         ,boardArr[i][0],boardArr[i][1],boardArr[i][2],boardArr[i][3]);
-
                             }
                         }
-
                     }
-
                     break;
                 case 4:
                     // 4. 게시판 글 삭제
@@ -131,27 +127,23 @@ public class board {
                                         System.out.printf("글 번호 : %s | 작성자 : %s | 제목 : %s | 내용 : %s \n"
                                                 ,boardArr[k][0],boardArr[k][1],boardArr[k][2],boardArr[k][3]);
                                     }
-
                                 }else{
                                     System.out.println("삭제가 취소되었습니다.");
                                 }
                                 break;
                             }
-
                         }
-
                     }
-
                     break;
                 case 5:
-                    // 4. 게시판 글 검색
+                    // 5. 게시판 글 검색
                     break;
                 case 6:
+                    // 6. 프로그램 종료
                     break;
                 default:
                     System.out.println("잘못된 메뉴를 입력하셨습니다. 프로그램을 종료합니다.");
                     break;
-
             }
         }
 

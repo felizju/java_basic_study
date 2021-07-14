@@ -41,14 +41,13 @@ public class ArrayBasic {
         // new type[]을 생략할 수 있는 상황은 변수를 선언할 때 뿐임, 선언할 때는 생략할 수 있게 해줌.
         String[] foods = {"탕수육", "김치볶음밥", "짬뽕"};
         foods = new String[] {"오렌지", "자몽", "레몬"};
-        System.out.println(foods.length );
+        System.out.println(foods.length);
 
-        // 배열 내부값 한번에 출력하기
-        // Arrays.toString();
+        // 배열 내부값 한번에 출력하기 - Arrays.toString();
         System.out.println(Arrays.toString(foods));
         System.out.println(Arrays.toString(points));
 
-        // 배열 값 초기화를 안하면 각 타입의 기본값이 저장됨.
+        // 배열 값 초기화를 안하면 각 타입의 기본값이 저장됨
         double[] dArr = new double[4];
         System.out.println(Arrays.toString(dArr)); // 초기값 0.0
 

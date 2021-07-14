@@ -2,7 +2,7 @@ package day05;
 
 import java.util.Arrays;
 
-public class ArrayInsert {
+public class ArrayInsert1 {
     public static void main(String[] args) {
 
         int[] arr = {10, 20, 30};
@@ -19,6 +19,7 @@ public class ArrayInsert {
         }
 
         // 3. 추가할 데이터를 마지막 위치에 저장
+        // temp[index] == temp[temp.length-1]
         temp[temp.length-1] = newData;
 
         // 4. 기존 배열 변수가 신규 배열의 주소를 가질 수 있도록 설정

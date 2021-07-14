@@ -125,9 +125,9 @@ public class Roulette {
 
             } else {
                 //생존
-                //턴을 넘겨야 한다.
+                //턴을 넘겨야 함
                 System.out.println("휴... 살았습니다~~");
-                //turn인덱스를 조정
+                //turn인덱스 조정
                 if (turn == players.length - 1) {
                     //마지막번 플레이어는 다음 턴을 0으로 조절
                     turn = 0;

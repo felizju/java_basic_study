@@ -20,6 +20,8 @@ public class ArrayDelete2 {
             arr[i] = arr[i+1];
         }
 
+        System.out.println("옮긴 후 : "+Arrays.toString(arr));
+
         int[] temp = new int[arr.length-1];
 
         for (int i = 0; i < temp.length; i++) {

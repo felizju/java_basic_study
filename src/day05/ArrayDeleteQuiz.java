@@ -25,7 +25,7 @@ public class ArrayDeleteQuiz {
                     break;
                 }
             }
-            if (contain) {
+            if (contain) { // 포함되어 있다면
                 System.out.println(alias + "의 별명을 삭제합니다.");
 
                 for (int i = idx; i < members.length - 1; i++) {
